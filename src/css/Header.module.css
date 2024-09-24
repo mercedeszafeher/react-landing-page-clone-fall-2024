@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.fullLogo {
+  display: block;
+}
+
+.smallLogo {
+  display: none;
+  height: 40px; /* Adjust height as needed */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.downloadButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.appButton {
+  background-color: #8755de;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.appButton:hover {
+  background-color: #8c6fc4;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  display: none; /* Hide by default */
+  position: relative;
+}
+
+.dropdownButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.dropdownMenu li {
+  padding: 8px 12px;
+}
+
+.dropdownMenu li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .fullLogo {
+    display: none; /* Hide full logo on small screens */
+  }
+
+  .smallLogo {
+    display: block; /* Show small logo on small screens */
+  }
+
+  .navLinks {
+    display: none; /* Hide nav links on small screens */
+  }
+
+  .dropdown {
+    display: block; /* Show dropdown button on small screens */
+  }
+
+  .logo img {
+    height: 40px; /* Adjust logo size for smaller screens */
+  }
+}
