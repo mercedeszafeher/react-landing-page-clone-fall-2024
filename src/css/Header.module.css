@@ -7,16 +7,8 @@
 }
 
 .logo img {
-  height: 50px;
-}
-
-.fullLogo {
-  display: block;
-}
-
-.smallLogo {
-  display: none;
-  height: 40px; /* Adjust height as needed */
+  height: 40px;
+  margin-left: 40px;
 }
 
 .nav {
@@ -24,18 +16,17 @@
   align-items: center;
 }
 
-.downloadButtons {
-  display: flex;
-  gap: 10px;
-}
-
 .appButton {
+  font-size: 16px;
   background-color: #8755de;
   color: white;
   border: none;
   padding: 10px 15px;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  font-family: 'Gilroy', sans-serif;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .appButton:hover {
@@ -44,7 +35,19 @@
 
 .navLinks {
   display: flex;
+  gap: 40px;
+}
+
+.navLinks a {
+  font-family: 'Gilroy', sans-serif;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
   gap: 20px;
+}
+
+.navLinks a:hover {
+  color: #555555;
 }
 
 .dropdown {
@@ -74,24 +77,19 @@
 }
 
 .dropdownMenu li a {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
   text-decoration: none;
   color: #000;
 }
 
 .dropdownMenu li:hover {
-  background-color: #f0f0f0;
+  background-color: #8c6fc4;
+  border-radius: 10px;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .fullLogo {
-    display: none; /* Hide full logo on small screens */
-  }
-
-  .smallLogo {
-    display: block; /* Show small logo on small screens */
-  }
-
   .navLinks {
     display: none; /* Hide nav links on small screens */
   }

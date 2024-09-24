@@ -13,16 +13,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img
-          // src={logoWithText}
-          alt="ReturnQueen Logo"
-          className={styles.fullLogo}
-        />
-        <img
-          // src={smallLogo}
-          alt="ReturnQueen Small Logo"
-          className={styles.smallLogo}
-        />
+        <img src={logo} alt="ReturnQueen Logo" />
       </div>
       <nav className={styles.nav}>
         <div className={styles.navLinks}>
