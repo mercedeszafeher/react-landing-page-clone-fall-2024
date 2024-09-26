@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header.jsx';
 import LandingIntro from './components/LandingIntro.jsx';
-import RetailerLogos from './components/RetailerLogos.jsx';
 import SyncAllPurchase from './components/SyncAllPurchase.jsx';
+import Testimonials from './components/TestimonialsSec.jsx';
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
       <Header />
       <LandingIntro />
       <SyncAllPurchase />
-      {/* <RetailerLogos /> */}
+      <Testimonials />
     </div>
   );
 }

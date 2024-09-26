@@ -35,10 +35,11 @@ h1 {
 
 h3 {
   font-family: 'Gilroy-Light', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(16px, 5vw, 24px);
   color: #838080;
   line-height: 1.2;
+  text-transform: none;
 }
 
 .featureList {
